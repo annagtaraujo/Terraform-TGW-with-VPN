@@ -9,9 +9,14 @@ variable "subnet_azs" {
   default = ["us-west-2a", "us-west-2b", "us-west-2c", "us-west-2d"]
 }
 
-variable "ingress_port"{
+variable "ingress_port_tcp"{
   description = "Portas inbound liberadas"
   default = [22,80,443]
+}
+
+variable "ingress_port_udp"{
+  description = "Portas inbound liberadas"
+  default = [500,4500]
 }
 
 variable "ami"{

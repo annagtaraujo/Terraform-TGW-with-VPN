@@ -1,3 +1,7 @@
+output "psk_tunnel"{
+    value = module.network.psk_tunnel
+}
+
 #Outputs Instâncias PUblicas da VPC A
 
 output "public_ip_instance_pb_a"{

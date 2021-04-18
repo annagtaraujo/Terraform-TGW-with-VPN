@@ -1,3 +1,8 @@
+
+output "psk_tunnel"{
+    value = module.tgw.psk_tunnel
+}
+
 #Outputs Instâncias PUblicas da VPC A
 
 output "cidr_block_vpc_a"{

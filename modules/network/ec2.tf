@@ -4,7 +4,7 @@ resource "aws_instance" "vpc_a_pub_1" {
   ami                         = var.ami
   instance_type               = var.instance_type
   subnet_id                   = aws_subnet.vpc-public-subnet-a[0].id
-  vpc_security_group_ids     = [aws_security_group.sec-group-vpc-a-tcp.id, aws_security_group.sec-group-vpc-a-icmp.id]
+  vpc_security_group_ids     = [aws_security_group.sec-group-vpc-a-tcp.id, aws_security_group.sec-group-vpc-a-icmp.id, aws_security_group.sec-group-vpc-a-ike.id]
   key_name                    = aws_key_pair.ingress-keypair.key_name
   private_ip                  = "10.10.11.10"
 
