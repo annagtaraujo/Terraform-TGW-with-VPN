@@ -1,6 +1,6 @@
 resource "aws_customer_gateway" "customer_gateway" {
   bgp_asn    = 65000
-  ip_address = "201.231.128.133" #"186.22.56.226"  #IP Público do meu ponto remoto, que será a minha máquina local
+  ip_address = "186.22.56.226" #"201.231.128.133" #IP Público do meu ponto remoto, que será a minha máquina local
   type       = "ipsec.1"
 }
 

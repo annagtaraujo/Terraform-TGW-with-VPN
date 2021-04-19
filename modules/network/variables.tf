@@ -15,7 +15,7 @@ variable "ingress_port_tcp"{
 }
 
 variable "ingress_port_udp"{
-  description = "Portas inbound liberadas"
+  description = "Portas inbound liberadas - Protocolo IKE"
   default = [500,4500]
 }
 

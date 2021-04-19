@@ -66,7 +66,7 @@ resource "aws_route" "public_tgw_a_to_c" {
 
 resource "aws_route" "public_static_vpn" {
   route_table_id         = aws_route_table.public_table_a.id
-  destination_cidr_block = "201.231.128.0/24" #"186.22.56.0/24" #rota para a minha rede pública, que é o endpoint da minha vpn
+  destination_cidr_block =  "186.22.56.0/24" #"201.231.128.0/24" #rota para a minha rede pública, que é o endpoint da minha vpn
   transit_gateway_id = module.tgw.tgw_id
 
   timeouts {
